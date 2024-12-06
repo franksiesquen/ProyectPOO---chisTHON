@@ -1,0 +1,54 @@
+Un programa es lo que da vida a una computadora. Sin él, incluso la computadora más avanzada no sería más que un objeto inanimado. Es similar a un piano: sin alguien que lo toque, no es más que una caja de madera. 
+
+Aunque las computadoras pueden realizar tareas increíblemente complejas, esta capacidad no es inherente a ellas. En esencia, su naturaleza es mucho más básica. Solo pueden ejecutar operaciones muy simples, como sumar o dividir, pero lo hacen a velocidades impresionantes y pueden repetirlas casi infinitamente. A pesar de esto, no son capaces de entender por sí solas cálculos avanzados, aunque con los avances tecnológicos esto podría cambiar en el futuro.
+
+# ¿Qué es Python?
+
+Python es un lenguaje de programación de alto nivel que se utiliza en una amplia variedad de aplicaciones. Es dinámico, orientado a objetos y diseñado para ser accesible tanto para principiantes como para expertos. 
+
+Aunque su nombre podría asociarse a una serpiente, en realidad proviene de un programa de comedia británico llamado *Monty Python's Flying Circus*. Este espectáculo era tan influyente y popular entre los programadores que Guido van Rossum, creador del lenguaje, decidió nombrarlo en su honor.
+
+# ¿Quién está detrás de Python?
+
+A diferencia de otros lenguajes de programación que son creados por grandes equipos y compañías, Python nació de la visión de una sola persona: Guido van Rossum, originario de los Países Bajos. Aunque el lenguaje ha evolucionado gracias al esfuerzo de miles de desarrolladores, testers y usuarios, fue Guido quien sembró la idea inicial que dio origen a Python.
+
+# Los objetivos de Python
+
+En 1999, Guido definió algunas metas clave para Python. Estas incluían:
+
+- Ser fácil de usar y tan potente como otros lenguajes destacados.  
+- Tener un código abierto para fomentar la colaboración global.  
+- Ser intuitivo y claro, casi como leer inglés común.  
+- Adecuarse a tareas cotidianas y permitir desarrollos rápidos.  
+
+Hoy, estas metas se han alcanzado con creces. Python es reconocido como uno de los lenguajes más populares, ocupando los primeros lugares en rankings globales.
+
+# ¿Por qué Python es especial?
+
+Python ha ganado popularidad entre programadores de todos los niveles y empresas de diversas industrias. Esto se debe a varias razones prácticas:  
+
+- **Facilidad de aprendizaje**: Se necesita menos tiempo para aprenderlo en comparación con otros lenguajes, lo que permite a los principiantes empezar a programar más rápido.  
+- **Simplicidad al enseñar**: Los educadores pueden centrarse en conceptos de programación generales en lugar de lidiar con detalles complicados del lenguaje.  
+- **Rapidez al desarrollar**: Es común que los proyectos avancen más rápido gracias a la simplicidad de Python.  
+- **Comprensión del código**: Es más fácil leer y entender el código, incluso cuando es escrito por otros.  
+- **Accesibilidad**: Python es gratuito, multiplataforma y de código abierto. Esto lo hace ideal para quienes buscan una herramienta versátil y económica.
+
+# ¿Dónde encontramos Python?
+
+Python está en todas partes, desde motores de búsqueda y redes sociales hasta aplicaciones científicas y herramientas de desarrollo. Su uso se ha extendido entre científicos, desarrolladores de software y testers de proyectos tecnológicos. Muchas personas han optado por reemplazar herramientas propietarias costosas con Python, debido a su flexibilidad y bajo costo.
+
+# ¿Cuándo no usar Python?
+
+Aunque es muy popular, Python no es ideal para todas las tareas. Por ejemplo:
+
+- **Programación de bajo nivel**: No es adecuado para crear controladores o sistemas que necesitan interactuar directamente con el hardware.  
+- **Desarrollo móvil**: Aunque se está avanzando en este campo, Python todavía no es una opción predominante para aplicaciones móviles.
+
+# ¿Python 2 o Python 3?
+
+Existen dos versiones principales de Python: Python 2 y Python 3.  
+
+- **Python 2**: Es una versión más antigua que ya no recibe actualizaciones significativas, aunque todavía se utiliza ampliamente en proyectos heredados.  
+- **Python 3**: Es la versión moderna y en continuo desarrollo. Su diseño introduce mejoras significativas, pero no es compatible con Python 2, lo que complica la migración de proyectos antiguos.  
+
+El proceso de migrar código de Python 2 a Python 3 puede ser laborioso, costoso y arriesgado. Por esta razón, muchas empresas prefieren mantener sus sistemas basados en Python 2 en lugar de adaptarlos. Sin embargo, Python 3 se ha convertido en el estándar para nuevos desarrollos, ofreciendo un lenguaje más moderno y eficiente.

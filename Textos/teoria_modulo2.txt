@@ -1,0 +1,70 @@
+# Tu primer programa
+Es hora de comenzar a escribir código real y funcional en Python. Por el momento será muy sencillo.
+
+Como se muestran algunos conceptos y términos fundamentales, estos fragmentos de código no serán complejos ni difíciles.
+
+Ejecuta el código en la ventana del editor a la derecha. Si todo sale bien, verás la línea de texto en la ventana de consola.
+
+Como alternativa, inicia IDLE, crea un nuevo archivo fuente de Python, coloca este código, nombra el archivo y guárdalo. Ahora ejecútalo. Si todo sale bien, verás el texto contenido entre comillas en la ventana de la consola IDLE. El código que has ejecutado debería parecerte familiar. Viste algo muy similar cuando te guiamos a través de la configuración del entorno IDLE.
+
+* Ojo cada vez que se te pida programar, presiona el botón de la "ir a consola" y te llevará a una consola de Python
+donde tendrás que ingresar el código que se te pide
+
+Ahora dedicaremos un poco de tiempo para mostrarte y explicarte lo que estás viendo y por que se ve así.
+
+Como puedes ver, el primer programa consta de las siguientes partes:
+
+- La palabra print;
+- Un paréntesis de apertura;
+- Una comilla;
+- Una línea de texto: ¡Hola, Mundo!;
+- Otra comilla;
+- Un paréntesis de cierre.
+
+Cada uno de los elementos anteriores juega un papel muy importante en el código.
+
+# La función print()
+
+Observa la siguiente línea de código: print("¡Hola, Mundo!")
+
+La palabra print que puedes ver aquí es el nombre de una función. Eso no significa que dondequiera que aparezca esta palabra, será siempre el nombre de una función. El significado de la palabra proviene del contexto en el cual se haya utilizado la palabra.
+
+Probablemente hayas encontrado el término función muchas veces antes, durante las clases de matemáticas. Probablemente también puedes recordar varios nombres de funciones matemáticas, como seno o logaritmo.
+
+Las funciones de Python, sin embargo, son más flexibles y pueden contener más que sus parientes matemáticos.
+
+Una función (en este contexto) es una parte separada del código de computadora el cual es capaz de:
+
+- causar algún efecto (por ejemplo, enviar texto a la terminal, crear un archivo, dibujar una imagen, reproducir un sonido, etc.); esto es algo completamente inaudito en el mundo de las matemáticas.
+- evaluar un valor (por ejemplo, la raíz cuadrada de un valor o la longitud de un texto dado) y devolverlo como el resultado de la función; esto es lo que hace que las funciones de Python sean parientes de los conceptos matemáticos.
+
+Además, muchas de las funciones de Python pueden hacer las dos cosas anteriores juntas.
+
+# Argumentos de funciones
+
+Como se dijo anteriormente, una función puede tener:
+
+- Un efecto;
+- Un resultado.
+
+También existe un tercer componente de la función, muy importante - el o los argumento(s).
+
+Las funciones matemáticas usualmente toman un argumento. por ejemplo, sen(x) toma una x, que es la medida de un ángulo.
+
+Las funciones de Python, por otro lado, son más versátiles. Dependiendo de las necesidades individuales, pueden aceptar cualquier cantidad de argumentos - tantos como sea necesario para realizar sus tareas. Nota: Cuando dijimos cualquier número, eso incluye el cero - algunas funciones de Python no necesitan ningún argumento.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
