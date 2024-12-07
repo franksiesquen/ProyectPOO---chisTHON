@@ -1,0 +1,764 @@
+<Test1Screen>:
+    Screen:
+        name: "quiz"
+
+        MDBoxLayout:
+            orientation: "vertical"
+
+            MDTopAppBar:
+                title: "Quiz de Python"
+                left_action_items: [["arrow-left", lambda x: setattr(app.root, 'current', 'lecciones')]]
+                right_action_items: [["send", lambda x: app.evaluate_answers()]]
+
+            ScrollView:
+                MDBoxLayout:
+                    orientation: "vertical"
+                    size_hint_y: None
+                    height: self.minimum_height
+                    spacing: dp(20)  # Espaciado entre las preguntas
+                    padding: dp(10)
+
+                    # Pregunta 1
+                    MDCard:
+                        orientation: "vertical"
+                        size_hint: None, None
+                        size: "340dp", "250dp"
+                        pos_hint: {"center_x": 0.5}
+                        padding: "15dp"
+                        spacing: "10dp"
+                        elevation: 4
+
+                        MDLabel:
+                            text: "1. ¿Qué tipo de dato es el siguiente valor: 3.14?"
+                            theme_text_color: "Primary"
+                            halign: "center"
+                            font_style: "H6"
+
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            size_hint_y: None
+                            height: self.minimum_height
+                            spacing: dp(10)
+                            padding: dp(10)
+
+                            # Opción 1
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "int"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q1"
+                                    on_active: app.set_answer("q1", "int", self.active)
+
+                            # Opción 2
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "float"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q1"
+                                    on_active: app.set_answer("q1", "float", self.active)
+
+                            # Opción 3
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "str"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q1"
+                                    on_active: app.set_answer("q1", "str", self.active)
+
+                            # Opción 4
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "bool"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q1"
+                                    on_active: app.set_answer("q1", "bool", self.active)
+                                    
+                    MDCard:
+                        orientation: "vertical"
+                        size_hint: None, None
+                        size: "340dp", "250dp"
+                        pos_hint: {"center_x": 0.5}
+                        padding: "15dp"
+                        spacing: "10dp"
+                        elevation: 4
+
+                        MDLabel:
+                            text: "2. ¿Cómo se declara una variable en Python?"
+                            theme_text_color: "Primary"
+                            halign: "center"
+                            font_style: "H6"
+
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            size_hint_y: None
+                            height: self.minimum_height
+                            spacing: dp(10)
+                            padding: dp(10)
+
+                            # Opción 1
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "var x = 5"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q2"
+                                    on_active: app.set_answer("q2", "var x = 5", self.active)
+
+                            # Opción 2
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "x := 5"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q2"
+                                    on_active: app.set_answer("q2", "x := 5", self.active)
+
+                            # Opción 3
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "x = 5"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q2"
+                                    on_active: app.set_answer("q2", "x = 5", self.active)
+
+                            # Opción 4
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "let x = 5"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q2"
+                                    on_active: app.set_answer("q2", "let x = 5", self.active)
+                    
+                    MDCard:
+                        orientation: "vertical"
+                        size_hint: None, None
+                        size: "340dp", "250dp"
+                        pos_hint: {"center_x": 0.5}
+                        padding: "15dp"
+                        spacing: "10dp"
+                        elevation: 4
+
+                        MDLabel:
+                            text: "3. ¿Qué función se utiliza para obtener la longitud de una lista en Python?"
+                            theme_text_color: "Primary"
+                            halign: "center"
+                            font_style: "H6"
+
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            size_hint_y: None
+                            height: self.minimum_height
+                            spacing: dp(10)
+                            padding: dp(10)
+
+                            # Opción 1
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "length()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q3"
+                                    on_active: app.set_answer("q3", "length()", self.active)
+
+                            # Opción 2
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "len()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q3"
+                                    on_active: app.set_answer("q3", "len()", self.active)
+
+                            # Opción 3
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "size()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q3"
+                                    on_active: app.set_answer("q3", "size()", self.active)
+
+                            # Opción 4
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "count()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q3"
+                                    on_active: app.set_answer("q3", "count()", self.active)
+                    
+                    MDCard:
+                        orientation: "vertical"
+                        size_hint: None, None
+                        size: "340dp", "250dp"
+                        pos_hint: {"center_x": 0.5}
+                        padding: "15dp"
+                        spacing: "10dp"
+                        elevation: 4
+
+                        MDLabel:
+                            text: "4. ¿Qué palabra clave se usa para definir una función en Python?"
+                            theme_text_color: "Primary"
+                            halign: "center"
+                            font_style: "H6"
+
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            size_hint_y: None
+                            height: self.minimum_height
+                            spacing: dp(10)
+                            padding: dp(10)
+
+                            # Opción 1
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "define"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q4"
+                                    on_active: app.set_answer("q4", "define", self.active)
+
+                            # Opción 2
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "func "
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q4"
+                                    on_active: app.set_answer("q4", "func", self.active)
+
+                            # Opción 3
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "def"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q4"
+                                    on_active: app.set_answer("q4", "def", self.active)
+
+                            # Opción 4
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "function"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q4"
+                                    on_active: app.set_answer("q4", "function", self.active)
+                    
+                    MDCard:
+                        orientation: "vertical"
+                        size_hint: None, None
+                        size: "340dp", "250dp"
+                        pos_hint: {"center_x": 0.5}
+                        padding: "15dp"
+                        spacing: "10dp"
+                        elevation: 4
+
+                        MDLabel:
+                            text: "5. ¿Cómo se crea un diccionario en Python?"
+                            theme_text_color: "Primary"
+                            halign: "center"
+                            font_style: "H6"
+
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            size_hint_y: None
+                            height: self.minimum_height
+                            spacing: dp(10)
+                            padding: dp(10)
+
+                            # Opción 1
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "dict = {}"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q5"
+                                    on_active: app.set_answer("q5", "dict = {}", self.active)
+
+                            # Opción 2
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "dict = []"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q5"
+                                    on_active: app.set_answer("q5", "dict = []", self.active)
+
+                            # Opción 3
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "dict = ()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q5"
+                                    on_active: app.set_answer("q5", "dict = ()", self.active)
+
+                            # Opción 4
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "dict = ||"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q5"
+                                    on_active: app.set_answer("q5", "dict = ||", self.active)
+
+                    MDCard:
+                        orientation: "vertical"
+                        size_hint: None, None
+                        size: "340dp", "250dp"
+                        pos_hint: {"center_x": 0.5}
+                        padding: "15dp"
+                        spacing: "10dp"
+                        elevation: 4
+
+                        MDLabel:
+                            text: "6. ¿Qué método se usa para agregar un elemento al final de una lista?"
+                            theme_text_color: "Primary"
+                            halign: "center"
+                            font_style: "H6"
+
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            size_hint_y: None
+                            height: self.minimum_height
+                            spacing: dp(10)
+                            padding: dp(10)
+
+                            # Opción 1
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "append()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q6"
+                                    on_active: app.set_answer("q6", "append()", self.active)
+
+                            # Opción 2
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "add()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q6"
+                                    on_active: app.set_answer("q6", "add()", self.active)
+
+                            # Opción 3
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "insert()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q6"
+                                    on_active: app.set_answer("q6", "insert()", self.active)
+
+                            # Opción 4
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "extend()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q6"
+                                    on_active: app.set_answer("q6", "extend()", self.active)
+
+                    MDCard:
+                        orientation: "vertical"
+                        size_hint: None, None
+                        size: "340dp", "250dp"
+                        pos_hint: {"center_x": 0.5}
+                        padding: "15dp"
+                        spacing: "10dp"
+                        elevation: 4
+
+                        MDLabel:
+                            text: "7. ¿Cuál es la salida de la siguiente expresión? print(2 ** 3)"
+                            theme_text_color: "Primary"
+                            halign: "center"
+                            font_style: "H6"
+
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            size_hint_y: None
+                            height: self.minimum_height
+                            spacing: dp(10)
+                            padding: dp(10)
+
+                            # Opción 1
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "8"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q7"
+                                    on_active: app.set_answer("q7", "8", self.active)
+
+                            # Opción 2
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "6"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q7"
+                                    on_active: app.set_answer("q7", "6", self.active)
+
+                            # Opción 3
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "5"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q7"
+                                    on_active: app.set_answer("q7", "5", self.active)
+
+                            # Opción 4
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "23"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q7"
+                                    on_active: app.set_answer("q7", "23", self.active)
+                    
+                    MDCard:
+                        orientation: "vertical"
+                        size_hint: None, None
+                        size: "340dp", "270dp"
+                        pos_hint: {"center_x": 0.5}
+                        padding: "15dp"
+                        spacing: "10dp"
+                        elevation: 4
+
+                        MDLabel:
+                            text: "8. ¿Qué operador se usa para la comparación de igualdad en Python?"
+                            theme_text_color: "Primary"
+                            halign: "center"
+                            font_style: "H6"
+
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            size_hint_y: None
+                            height: self.minimum_height
+                            spacing: dp(10)
+                            padding: dp(10)
+
+                            # Opción 1
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "="
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q8"
+                                    on_active: app.set_answer("q8", "=", self.active)
+
+                            # Opción 2
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "=="
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q8"
+                                    on_active: app.set_answer("q8", "==", self.active)
+
+                            # Opción 3
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "=!="
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q8"
+                                    on_active: app.set_answer("q8", "=!=", self.active)
+
+                            # Opción 4
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "==="
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q8"
+                                    on_active: app.set_answer("q8", "===", self.active)
+                    
+                    MDCard:
+                        orientation: "vertical"
+                        size_hint: None, None
+                        size: "340dp", "280dp"
+                        pos_hint: {"center_x": 0.5}
+                        padding: "15dp"
+                        spacing: "10dp"
+                        elevation: 4
+
+                        MDLabel:
+                            text: "9. ¿Qué función se utiliza para obtener la entrada del usuario en Python?"
+                            theme_text_color: "Primary"
+                            halign: "center"
+                            font_style: "H6"
+
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            size_hint_y: None
+                            height: self.minimum_height
+                            spacing: dp(10)
+                            padding: dp(10)
+
+                            # Opción 1
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "scan()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q9"
+                                    on_active: app.set_answer("q9", "scan()", self.active)
+
+                            # Opción 2
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "input()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q9"
+                                    on_active: app.set_answer("q9", "input()", self.active)
+
+                            # Opción 3
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "read()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q9"
+                                    on_active: app.set_answer("q9", "read()", self.active)
+
+                            # Opción 4
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(30)
+                                MDLabel:
+                                    text: "get()"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q9"
+                                    on_active: app.set_answer("q9", "get()", self.active)
+                    
+                    MDCard:
+                        orientation: "vertical"
+                        size_hint: None, None
+                        size: "340dp", "320dp"
+                        pos_hint: {"center_x": 0.5}
+                        padding: "15dp"
+                        spacing: "10dp"
+                        elevation: 4
+
+                        MDLabel:
+                            text: "10. ¿Cómo se comenta una línea en Python?"
+                            theme_text_color: "Primary"
+                            halign: "center"
+                            font_style: "H6"
+
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            size_hint_y: None
+                            height: self.minimum_height
+                            spacing: dp(20)  # Espaciado entre las opciones
+                            padding: dp(10)
+
+                            # Opción 1
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(40)  # Aumentar la altura para más espacio visual
+                                spacing: dp(10)  # Espaciado entre el texto y el checkbox
+                                MDLabel:
+                                    text: "// Esto es un comentario"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q10"
+                                    on_active: app.set_answer("q10", "// Esto es un comentario", self.active)
+
+                            # Opción 2
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(40)
+                                spacing: dp(10)
+                                MDLabel:
+                                    text: "/* Esto es un comentario */"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q10"
+                                    on_active: app.set_answer("q10", "/* Esto es un comentario */", self.active)
+
+                            # Opción 3
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(40)
+                                spacing: dp(10)
+                                MDLabel:
+                                    text: "# Esto es un comentario"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q10"
+                                    on_active: app.set_answer("q10", "# Esto es un comentario", self.active)
+
+                            # Opción 4
+                            MDBoxLayout:
+                                size_hint_y: None
+                                height: dp(40)
+                                spacing: dp(10)
+                                MDLabel:
+                                    text: "<!-- Esto es un comentario -->"
+                                    halign: "center"
+                                    size_hint_x: 0.7
+                                MDCheckbox:
+                                    group: "q10"
+                                    on_active: app.set_answer("q10", "<!-- Esto es un comentario -->", self.active)
+
+                                
+
+                    # Más preguntas aquí, siguiendo la misma estructura
+                    # Asegúrate de cambiar el índice (q2, q3, etc.) en el grupo y la llamada a app.set_answer
+<ResultadosScreen>:
+    Screen:
+        name: "results"
+
+        MDBoxLayout:
+            orientation: "vertical"
+            padding: dp(20)
+            spacing: dp(10)
+
+            MDLabel:
+                id: results_label
+                text: "Resultados del test"
+                halign: "center"
+                theme_text_color: "Primary"
+                font_style: "H6"
+
+            MDLabel:
+                text: "Progreso"
+                theme_text_color: "Secondary"
+                halign: "center"
+                font_style: "Subtitle1"
+
+            MDProgressBar:
+                id: progress_bar
+                value: 0  # Inicialmente en 0
+                max: 100
+                color: 0, 1, 0, 1  # Verde
+                size_hint_y: None  # Esto permite controlar la altura
+                height: dp(10)  # Establece un valor más pequeño para la altura de la barra
+
+            MDRaisedButton:
+                text: "Volver al Test"
+                pos_hint: {"center_x": 0.5, "center_y": 0.7}
+                on_release: app.reset_quiz()
+
